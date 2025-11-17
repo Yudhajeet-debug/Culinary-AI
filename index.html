@@ -39,6 +39,19 @@
       .slide-enter-right {
         animation: slideInFromRight 0.4s ease-out forwards;
       }
+      @keyframes pulse {
+        0%, 100% {
+          opacity: 1;
+          transform: scale(1);
+        }
+        50% {
+          opacity: 0.8;
+          transform: scale(1.15);
+        }
+      }
+      .animate-pulse-mic {
+        animation: pulse 1.5s ease-in-out infinite;
+      }
     </style>
   <script type="importmap">
 {

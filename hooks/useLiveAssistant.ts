@@ -92,7 +92,7 @@ export interface AssistantCallbacks {
 export const useLiveAssistant = (recipe: Recipe | null, callbacks: AssistantCallbacks) => {
     const [isSessionActive, setIsSessionActive] = useState(false);
     const [isMuted, setIsMuted] = useState(false);
-    // FIX: Corrected syntax for useState hook by adding '='.
+    // Fix: Corrected a syntax error in the useState declaration.
     const [userTranscription, setUserTranscription] = useState('');
     const [assistantTranscription, setAssistantTranscription] = useState('');
     const [isAssistantSpeaking, setIsAssistantSpeaking] = useState(false);

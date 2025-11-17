@@ -92,7 +92,7 @@ const App: React.FC = () => {
         setIsLoading(false);
         setLoadingMessage('');
     }
-  }, [navigate]);
+  }, []);
 
   const handleImageUpload = useCallback(async (imageBase64: string) => {
     setIsLoading(true);
@@ -124,6 +124,10 @@ const App: React.FC = () => {
 
   const handleRemovePantryIngredient = (ingredientToRemove: string) => {
     setPantryIngredients(prev => prev.filter(ing => ing !== ingredientToRemove));
+  };
+
+  const handleClearPantry = () => {
+    setPantryIngredients([]);
   };
 
   const handleSelectRecipe = (recipe: Recipe) => {
@@ -168,6 +172,7 @@ const App: React.FC = () => {
               onRemoveIngredient={handleRemovePantryIngredient}
               onGenerate={handleManualGenerate}
               hasFridgeIngredients={fridgeIngredients.length > 0}
+              onClearAll={handleClearPantry}
             />
             <FeaturedRecipes 
               recipes={featuredRecipes} 
