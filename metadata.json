@@ -1,0 +1,8 @@
+{
+  "name": "Culinary AI Assistant",
+  "description": "Snap a photo of your fridge, and this AI-powered culinary assistant will identify ingredients, suggest personalized recipes with generated images, and guide you through cooking with a real-time voice assistant.",
+  "requestFramePermissions": [
+    "microphone",
+    "camera"
+  ]
+}
