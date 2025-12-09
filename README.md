@@ -11,8 +11,8 @@
 ## 🍛 What's Cooking? (Features)
 
 * **🥦 Fridge-to-Feast Generator:** Input what's in your fridge (e.g., "Paneer, Capsicum, Tomato"), and get a killer recipe instantly!
-* **💰 Budget Boss:** Calculates the estimated cost of your meal in **Rupees (₹)** so you save money while eating good.
-* **🥗 Diet Commando:** Filters for High Protein, Vegan, Keto, or pure Desi (Indian) Home-Style meals.
+* **💰 Budget Boss:** Calculates the estimated cost of your meal in **in your country's currency (₹/$)** so you save money while eating good.
+* **🥗 Diet Commando:** Filters for High Protein, Vegan, Keto, or pure Home-Style meals.
 * **🔥 Spice Meter:** Adjust the spice level from "Mild" to "Dragon Fire"! 🐉
 
 ## 🛠️ Tech Stack
