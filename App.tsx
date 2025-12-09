@@ -182,11 +182,12 @@ const App: React.FC = () => {
               fridgeIngredients={fridgeIngredients}
               onLoadMore={handleLoadMore}
               isMoreLoading={isMoreFeaturedLoading}
+              shoppingList={shoppingList}
             />
           </>
         );
       case 'recipes':
-        return <RecipeGrid recipes={recipes} onSelectRecipe={handleSelectRecipe} onAddToShoppingList={handleAddToShoppingList} onNewSearch={() => navigate('upload')} fridgeIngredients={[...fridgeIngredients, ...pantryIngredients]} />;
+        return <RecipeGrid recipes={recipes} onSelectRecipe={handleSelectRecipe} onAddToShoppingList={handleAddToShoppingList} onNewSearch={() => navigate('upload')} fridgeIngredients={[...fridgeIngredients, ...pantryIngredients]} shoppingList={shoppingList} />;
       case 'cooking':
         return selectedRecipe ? <CookingModeView recipe={selectedRecipe} onExit={() => navigate('recipes')} onAddToShoppingList={handleAddToShoppingList} fridgeIngredients={[...fridgeIngredients, ...pantryIngredients]} /> : null;
       case 'shopping':
